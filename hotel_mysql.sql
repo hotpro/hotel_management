@@ -93,7 +93,7 @@ CREATE TABLE invoice (
 	primary key (invoice_id)
 );
 
-CREATE TABLE service (
+CREATE TABLE service_ordered (
 	service_id         integer not null,
 	service_type       varchar(10),
 	price              real,
@@ -102,6 +102,13 @@ CREATE TABLE service (
 	quantity           integer,
 	primary key (service_id),
 	foreign key (stay_id) references stay(stay_id)
+);
+
+CREATE TABLE service (
+	service_id         integer not null,
+	service_type       varchar(10),
+	price              real,
+	primary key (service_id),
 );
 
 CREATE TABLE event (
