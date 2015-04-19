@@ -53,14 +53,16 @@ CREATE TABLE room (
 CREATE TABLE guest_room (
 	room_id            integer not null,
 	room_level         varchar(10),
-	primary key (room_id)
+	primary key (room_id),
+	foreign key (room_id) references room(room_id)
 );
 
 CREATE TABLE ballroom (
 	room_id            integer not null,
 	functionality      varchar(10),
 	area               integer,
-	primary key (room_id)
+	primary key (room_id),
+	foreign key (room_id) references room(room_id)
 );
 
 CREATE TABLE stay (
