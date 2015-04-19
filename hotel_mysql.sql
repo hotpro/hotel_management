@@ -95,18 +95,16 @@ CREATE TABLE invoice (
 
 CREATE TABLE service_ordered (
 	service_id         integer not null,
-	service_type       varchar(10),
-	price              real,
 	stay_id            integer not null,
 	service_date       date,
 	quantity           integer,
-	primary key (service_id),
-	foreign key (stay_id) references stay(stay_id)
+	primary key (stay_id, service_id, service_date),
+	foreign key (service_id) references service(service_id)
 );
 
 CREATE TABLE service (
 	service_id         integer not null,
-	service_type       varchar(10),
+	service_name       varchar(10),
 	price              real,
 	primary key (service_id)
 );
