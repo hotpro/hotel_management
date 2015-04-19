@@ -108,7 +108,7 @@ CREATE TABLE service (
 	service_id         integer not null,
 	service_type       varchar(10),
 	price              real,
-	primary key (service_id),
+	primary key (service_id)
 );
 
 CREATE TABLE event (
