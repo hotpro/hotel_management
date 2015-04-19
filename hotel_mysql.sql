@@ -31,7 +31,7 @@ CREATE TABLE promotion (
 	discount_amount        real,
 	extra_bonus_point      integer,
 	required_stay_duration integer,
-	primary key (promotion_id),
+	primary key (promotion_id)
 );
 
 CREATE TABLE promo_room (
@@ -46,7 +46,7 @@ CREATE TABLE room (
 	point_rate         integer,
 	max_capacity       integer,
 	type               varchar(10),
-	primary key (room_id),
+	primary key (room_id)
 );
 
 CREATE TABLE guest_room (
@@ -100,7 +100,7 @@ CREATE TABLE service (
 	stay_id            integer not null,
 	service_date       date,
 	quantity           integer,
-	primary key (service_id)
+	primary key (service_id),
 	foreign key (stay_id) references stay(stay_id)
 );
 
