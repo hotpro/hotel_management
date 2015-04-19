@@ -153,10 +153,17 @@ INSERT INTO ballroom VALUES
 
 INSERT INTO event VALUES
 (111,'Birthday Party',50),
-(112,'Wedding',300),
-(113,'Company Traning',200),
-(114,'Meeting',20),
-(115,'Meeting',50),
+(222,'Wedding',300),
+(333,'Company Traning',200),
+(555,'Meeting',20),
+(666,'Meeting',50),
+
+INSERT INTO event_room VALUES
+(111,110),
+(222,112),
+(333,113),
+(555,114),
+(666,115),
 
 
 SET foreign_key_checks = 1;
