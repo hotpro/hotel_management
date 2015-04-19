@@ -123,13 +123,13 @@ CREATE TABLE event_room (
 INSERT INTO room VALUES
 (101, 100, 1000, 2, 'Standard'),
 (102, 110, 1100, 2, 'Standard'),
-(103, 110, 1100, 4, 'Ballroom'),
+(103, 110, 1100, 68, 'Ballroom'),
 (201, 110, 1100, 2, 'Standard'),
 (202, 110, 1100, 2, 'Standard'),
-(203, 110, 1100, 4, 'Ballroom'),
+(203, 110, 1100, 88, 'Ballroom'),
 (301, 110, 1100, 2, 'Standard'),
 (302, 110, 1100, 2, 'Standard'),
-(303, 200, 2000, 4, 'Ballroom');
+(303, 200, 2000, 128, 'Ballroom');
 
 INSERT INTO guest_room VALUES
 (101, 'Single'),
@@ -140,9 +140,9 @@ INSERT INTO guest_room VALUES
 (302, 'Double');
 
 INSERT INTO ballroom VALUES
-(103, 'conference'),
-(203, 'conference'),
-(303, 'dance');
+(103, 'conference', 1000),
+(203, 'conference', 2000),
+(303, 'dance', 1200);
 
 INSERT INTO event VALUES
 (111,'Birthday Party',50),
