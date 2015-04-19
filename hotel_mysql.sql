@@ -114,7 +114,6 @@ CREATE TABLE service (
 CREATE TABLE event (
 	event_id           integer not null,
 	event_name         varchar(10),
-	type               integer,
 	number_of_people   integer,
 	primary key (event_id)
 );
