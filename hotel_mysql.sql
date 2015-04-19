@@ -123,12 +123,26 @@ CREATE TABLE event_room (
 INSERT INTO room VALUES
 (101, 100, 1000, 2, 'Standard'),
 (102, 110, 1100, 2, 'Standard'),
-(103, 110, 1100, 4, 'Deluxe'),
+(103, 110, 1100, 4, 'Ballroom'),
 (201, 110, 1100, 2, 'Standard'),
 (202, 110, 1100, 2, 'Standard'),
-(203, 110, 1100, 4, 'Deluxe'),
+(203, 110, 1100, 4, 'Ballroom'),
 (301, 110, 1100, 2, 'Standard'),
 (302, 110, 1100, 2, 'Standard'),
-(303, 200, 2000, 4, 'Deluxe');
+(303, 200, 2000, 4, 'Ballroom');
+
+INSERT INTO guest_room VALUES
+(101, 'Single'),
+(102, 'Double'),
+(201, 'Single'),
+(202, 'Double'),
+(301, 'Single'),
+(302, 'Double');
+
+INSERT INTO ballroom VALUES
+(103, 'conference'),
+(203, 'conference'),
+(303, 'dance');
+
 
 SET foreign_key_checks = 1;
