@@ -108,7 +108,7 @@ CREATE TABLE service (
 	service_id         integer not null,
 	service_type       varchar(10),
 	price              real,
-	primary key (service_id),
+	primary key (service_id);
 );
 
 CREATE TABLE event (
@@ -156,14 +156,14 @@ INSERT INTO event VALUES
 (222,'Wedding',300),
 (333,'Company Traning',200),
 (555,'Meeting',20),
-(666,'Meeting',50),
+(666,'Meeting',50);
 
 INSERT INTO event_room VALUES
 (111,110),
 (222,112),
 (333,113),
 (555,114),
-(666,115),
+(666,115);
 
 
 SET foreign_key_checks = 1;
