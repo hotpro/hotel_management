@@ -1,4 +1,3 @@
-
 SET foreign_key_checks = 0;
 drop database if exists hotel;
 create database hotel;
