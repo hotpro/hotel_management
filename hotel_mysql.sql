@@ -24,20 +24,19 @@ CREATE TABLE membership (
 
 
 CREATE TABLE promotion (
-	promotion_id           integer not null,
-	type                   varchar(20),  
+	promo_name       	   varchar(30) not null,
 	start_date             date,
 	end_date               date,
 	discount_amount        real,
 	extra_bonus_point      integer,
 	required_stay_duration integer,
-	primary key (promotion_id)
+	primary key (promo_name)
 );
 
 CREATE TABLE promo_room (
 	room_type              varchar(10),
-	promotion_id           integer not null,
-	primary key (room_type, promotion_id)
+	promo_name	           varchar(30) not null,
+	primary key (room_type, promo_name)
 );
 
 CREATE TABLE room (
@@ -74,13 +73,13 @@ CREATE TABLE stay (
 	reserve_no        integer,
 	c_email           varchar(25) not null,
 	room_id           integer not null,
-	promotion_id      integer not null,
+	promo_name	      varchar(30) not null,
 	invoice_id        integer not null,
 	primary key (stay_id),
 	foreign key (c_email) references customer(email),
 	foreign key (room_id) references room(room_id),
 	foreign key (invoice_id) references invoice(invoice_id),
-	foreign key (promotion_id) references promotion(promotion_id)
+	foreign key (promo_name) references promotion(promo_name)
 );
 
 CREATE TABLE invoice (
