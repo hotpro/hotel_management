@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Room Info</title>
+  <link rel="stylesheet" href="css/table.css"
 </head>
 <body>
   <h1>Room Information</h1>
@@ -53,8 +54,13 @@
         // Fetch the database field names.
         $result = $con->query($query);
         $row = $result->fetch(PDO::FETCH_ASSOC);
+        print "        <tr>\n";
+        foreach ($row as $key => $value) {
+            print "            <td>" . $key       . "</td>\n";
+        }
+        print "        </tr>\n";
 
-        // Constrain the query if we got first and last names.
+        // Constrain the query if we room id
         if (strlen($roomid) > 0) {
             $query = "SELECT * FROM room ".
                  "WHERE room_id = :roomid";
