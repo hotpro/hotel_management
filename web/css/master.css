@@ -29,21 +29,23 @@ h1 {
 .row-1 {
   margin: 0px;
   height: 18px;
-  background-color: #E3F2FD;
+  background-color: #E1F5FE;
 }
 
 .row-2 {
   margin: 0px;
   height: 14px;
-  background-color: #51AFDB;
+  background-color: #4FC3F7;
 }
 .row-3 {
   margin: 0px;
-  height: 500px;
-  background-color: #E3F2FD;
+  height: 800px;
+  background-color: #E1F5FE;
 }
 .my-col {
-  margin-top: 14px;
-  height: 486px;
-  background-color: #FFFFFE;
+  margin-top: 16px;
+  height: 780px;
+  background-color: white;
+  padding: 20px;
+  font-size: 22px;
 }
