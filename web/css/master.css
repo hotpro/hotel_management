@@ -16,14 +16,22 @@ h1 {
 }
 
 .boxed {
-  border: 2px solid white ;
+  border: 3px solid white ;
   max-width: 500px;
-  margin-left: 180px;
 }
 
 .names{
-  color: white;
-  font-size: 24px;
+  color: #4FC3F7;
+  font-size: 20px;
+  font-family: helvetica;
+}
+
+.row {
+  margin: 0px;
+}
+
+.col-md-12 {
+  padding: 0px;
 }
 
 .row-1 {
@@ -39,13 +47,24 @@ h1 {
 }
 .row-3 {
   margin: 0px;
-  height: 800px;
+  height: 1600px;
   background-color: #E1F5FE;
 }
-.my-col {
+.my-col-1 {
   margin-top: 16px;
-  height: 780px;
+  padding: 20px;
+}
+
+.my-col-2 {
+  margin-top: 16px;
+  height: 1580px;
   background-color: white;
   padding: 20px;
   font-size: 22px;
+}
+
+.datepicker-inline {
+  display: block;
+  margin-left: 20%;
+  margin-right: auto;
 }

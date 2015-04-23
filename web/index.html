@@ -2,25 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/master.css">
   <title>Hotel Management</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.css">
+  <!-- datapicker -->
+  <link rel="stylesheet" href="css/datepicker.css">
+  <!-- my css -->
+  <link rel="stylesheet" href="css/master.css">
+
 </head>
 <body>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <img src="images/cover.jpg" alt="hotel image" class="img-responsive" />
-        <div class="caption text-center boxed">
+        <div class="caption text-center boxed col-md-offset-3">
           <h1>Hotel Management</h1>
-          <p class="names">
-            Huan Li<br>
-            Nan Ding<br>
-            Yutao Hou<br>
-            Jianxin Gao<br>
-            Chiunghui Tseng
-          </p>
         </div>
       </div>
     </div>
@@ -30,16 +28,85 @@
     <div class="row row-2">
     </div>
     <div class="row row-3">
-      <div class="col-md-6 my-col col-md-offset-3">
-        <p>
+      <div class="col-md-3 my-col-1">
+        <p class="names">
+          180-94<br>
+          Operation System<br>
+          Spring 2015<br>
+          <br>
+          Yutao Hou<br>
+          Huan Li<br>
+          Nan Ding<br>
+          Chiunghui Tseng<br>
+          Jianxin Gao
+        </p>
+      </div>
+      <div class="col-md-6 my-col-2">
+        <!-- <p>
           <a href="getroominfo.html">Query price/type/max</a>
         </p>
         <p>
           <a href="query1.html">Update price/type/max</a>
-        </p>
+        </p> -->
+        <div class="">
+          <!-- <hr/> -->
+          <!-- Tabs Navigation -->
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab1" data-toggle="tab">Search</a></li>
+            <li><a href="#tab2" data-toggle="tab">Book</a></li>
+            <li><a href="#tab3" data-toggle="tab">Manage</a></li>
+          </ul>
+          <hr/>
+          <!-- Tab Sections -->
+          <div class="tab-content">
+            <div class="tab-pane active" id="tab1">
+
+              <!-- Contents for first tab -->
+              <div>
+                <p class="text-primary bg-info">Specify a date to look up the available rooms :)
+                </p>
+                <div class="col-md-12 text-primary">
+                  <div class="col-md-6">Date selected:</div>
+                  <div id="date-data" class="col-md-6"></div>
+                </div>
+                <br>
+                <!-- Room: <input type="text" id="room" placeholder="search for a room">
+                <input type="submit" id="room-submit" value="search">
+                <div id="room-data"></div>
+                <input type="text" id="datepicker" name="date"> -->
+                <div id="dp1" class="well center-block"></div>
+                <button type="button" id="date-submit" class="btn btn-info center-block">Submit</button>
+                <!-- <input data-provide="datepicker">
+                <input id="dp2" data-date-format="mm/dd/yyyy"> -->
+              </div>
+            </div>
+
+            <div class="tab-pane" id="tab2">
+              <!-- Contents for second tab -->
+
+            </div>
+
+            <div class="tab-pane" id="tab3">
+              <!-- Contents for third tab -->
+
+            </div>
+          </div>
+          <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+        </div>
+
       </div>
     </div>
 
   </div>
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- datapicker -->
+  <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+  <!-- my js -->
+  <script type="text/javascript" src="js/global.js"></script>
+
 </body>
 </html>
