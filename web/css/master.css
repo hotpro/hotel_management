@@ -25,3 +25,25 @@ h1 {
   color: white;
   font-size: 24px;
 }
+
+.row-1 {
+  margin: 0px;
+  height: 18px;
+  background-color: #E3F2FD;
+}
+
+.row-2 {
+  margin: 0px;
+  height: 14px;
+  background-color: #51AFDB;
+}
+.row-3 {
+  margin: 0px;
+  height: 500px;
+  background-color: #E3F2FD;
+}
+.my-col {
+  margin-top: 14px;
+  height: 486px;
+  background-color: #FFFFFE;
+}
