@@ -123,43 +123,5 @@ CREATE TABLE event_room (
 	foreign key (room_id) references ballroom(room_id)
 );
 
-INSERT INTO room VALUES
-(101, 100, 1000, 2, 'Standard'),
-(102, 110, 1100, 2, 'Standard'),
-(103, 110, 1100, 68, 'Ballroom'),
-(201, 110, 1100, 2, 'Standard'),
-(202, 110, 1100, 2, 'Standard'),
-(203, 110, 1100, 88, 'Ballroom'),
-(301, 110, 1100, 2, 'Standard'),
-(302, 110, 1100, 2, 'Standard'),
-(303, 200, 2000, 128, 'Ballroom');
-
-INSERT INTO guest_room VALUES
-(101, 'Single'),
-(102, 'Double'),
-(201, 'Single'),
-(202, 'Double'),
-(301, 'Single'),
-(302, 'Double');
-
-INSERT INTO ballroom VALUES
-(103, 'conference', 1000),
-(203, 'conference', 2000),
-(303, 'dance', 1200);
-
-INSERT INTO event VALUES
-(111,'Birthday Party',50),
-(222,'Wedding',300),
-(333,'Company Traning',200),
-(555,'Meeting',20),
-(666,'Meeting',50);
-
-INSERT INTO event_room VALUES
-(111,110),
-(222,112),
-(333,113),
-(555,114),
-(666,115);
-
 
 SET foreign_key_checks = 1;
