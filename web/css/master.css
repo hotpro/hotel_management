@@ -1,0 +1,27 @@
+.thumbnail {
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    top: 24%;
+    left: 0;
+    width: 100%;
+    color: White;
+}
+
+h1 {
+  color: White;
+  font-size: 46px;
+}
+
+.boxed {
+  border: 2px solid white ;
+  max-width: 500px;
+  margin-left: 180px;
+}
+
+.names{
+  color: white;
+  font-size: 24px;
+}
