@@ -47,18 +47,10 @@ INSERT INTO guest_room VALUES
 (301, 'Single'),
 (302, 'Double');
 
-INSERT INTO stay VALUES
-(10001, '2015-04-21', '2015-04-22', 0, 120, 0, 500001, 'carolihuan@gmail.com', 101, 'AAA', 200001),
-(10002, '2015-04-25', '2015-04-27', 0, 187, 0, 500002, 'chrishou118@gmail.com', 102, 'Government', 200002),
-(10003, '2015-04-20', '2015-04-22', 0, 198, 300, 500003, 'chienshin1@gmail.com', 201, 'Member', 200003);
-
 INSERT INTO invoice VALUES
 (200001, 0, 0, 120, '1 Washington Sq, San Jose, CA 95192', '2015-04-22'),
 (200002, 0, 187, 0, '1 Washington Sq, San Jose, CA 95192', '2015-04-27'),
 (200003, 0, 100, 98, '1 Washington Sq, San Jose, CA 95192', '2015-04-22');
-
-INSERT INTO service_ordered VALUES
-(1, 10001, '2015-04-22', 3);
 
 INSERT INTO ballroom VALUES
 (103, 'conference', 1000),
@@ -73,11 +65,11 @@ INSERT INTO event VALUES
 (666,'Meeting',50);
 
 INSERT INTO event_room VALUES
-(111,110),
-(222,112),
-(333,113),
-(555,114),
-(666,115);
+(111,103),
+(222,103),
+(333,203),
+(555,203),
+(666,303);
 
 INSERT INTO service values
 (1, 'Breakfast', 10),
@@ -92,3 +84,11 @@ INSERT INTO membership VALUES
 (10003, 12000, 1, 'chienshin1@gmail.com'),
 (10004, 34000, 3, 'ambersun1234@gmail.com'),
 (10005, 46000, 4, 'nan.ding@gmail.com');
+
+INSERT INTO stay VALUES
+(10001, '2015-04-21', '2015-04-22', 0, 120, 0, 500001, 'carolihuan@gmail.com', 101, 'AAA', 200001),
+(10002, '2015-04-25', '2015-04-27', 0, 187, 0, 500002, 'chrishou118@gmail.com', 102, 'Government', 200002),
+(10003, '2015-04-20', '2015-04-22', 0, 198, 300, 500003, 'chienshin1@gmail.com', 201, 'Member', 200003);
+
+INSERT INTO service_ordered VALUES
+(1, 10001, '2015-04-22', 3);
