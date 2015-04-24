@@ -6,6 +6,10 @@
   <link rel="stylesheet" href="css/table.css"
 </head>
 <body>
+<div>
+<?php include 'return_to_home.php'?>
+<?php echo ' - '.'<a href="getroominfo.html">Back</a>'?>
+</div>
   <h1>Room Information</h1>
   <p>
     <?php

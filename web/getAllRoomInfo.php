@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Hotel Management</title>
+<link rel="stylesheet" href="css/table.css"
+
 </head>
 <body>
+
+<div>
+<?php include 'return_to_home.php';?>
+</div>
 <h2>Guest rooms</h2>
 <?php
     include 'connection.php';
@@ -24,7 +30,7 @@
     echo "</table>";
 ?>
 
-<h2>Ballrooms</h2>
+<br><h2>Ballrooms</h2>
 <?php
     
     $query = "select * from room, ballroom WHERE room.room_id=ballroom.room_id";
