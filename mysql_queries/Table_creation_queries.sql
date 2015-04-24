@@ -57,7 +57,6 @@ CREATE TABLE guest_room (
 
 CREATE TABLE ballroom (
 	room_id            integer not null,
-	functionality      varchar(10),
 	area               integer,
 	primary key (room_id),
 	foreign key (room_id) references room(room_id)

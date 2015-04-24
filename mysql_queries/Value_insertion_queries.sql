@@ -53,9 +53,9 @@ INSERT INTO invoice VALUES
 (200003, 0, 100, 98, '1 Washington Sq, San Jose, CA 95192', '2015-04-22');
 
 INSERT INTO ballroom VALUES
-(103, 'conference', 1000),
-(203, 'conference', 2000),
-(303, 'dance', 1200);
+(103, 1000),
+(203, 2000),
+(303, 1200);
 
 INSERT INTO event VALUES
 (111,'Birthday Party',50),
