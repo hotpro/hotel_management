@@ -48,9 +48,9 @@ INSERT INTO guest_room VALUES
 (302, 'Double');
 
 INSERT INTO invoice VALUES
-(200001, 0, 0, 120, '1 Washington Sq, San Jose, CA 95192', '2015-04-22'),
-(200002, 0, 187, 0, '1 Washington Sq, San Jose, CA 95192', '2015-04-27'),
-(200003, 0, 100, 98, '1 Washington Sq, San Jose, CA 95192', '2015-04-22');
+(0, 0, 120, '1 Washington Sq, San Jose, CA 95192', '2015-04-22'),
+(0, 187, 0, '1 Washington Sq, San Jose, CA 95192', '2015-04-27'),
+(0, 100, 98, '1 Washington Sq, San Jose, CA 95192', '2015-04-22');
 
 INSERT INTO ballroom VALUES
 (103, 1000),
@@ -58,37 +58,37 @@ INSERT INTO ballroom VALUES
 (303, 1200);
 
 INSERT INTO event VALUES
-(111,'Birthday Party',50),
-(222,'Wedding',300),
-(333,'Company Traning',200),
-(555,'Meeting',20),
-(666,'Meeting',50);
+('Birthday Party',50),
+('Wedding',300),
+('Company Traning',200),
+('Meeting',20),
+('Meeting',50);
 
 INSERT INTO event_room VALUES
-(111,103),
-(222,103),
-(333,203),
-(555,203),
-(666,303);
+(1,103),
+(2,103),
+(3,203),
+(4,203),
+(5,303);
 
 INSERT INTO service values
-(1, 'Breakfast', 10),
-(2, 'Lunch', 20),
-(3, 'Dinner', 30),
-(4, 'Parking', 25),
-(5, 'Laundry', 15);
+('Breakfast', 10),
+('Lunch', 20),
+('Dinner', 30),
+('Parking', 25),
+('Laundry', 15);
 
 INSERT INTO membership VALUES
-(10001, 10000, 1, 'carolihuan@gmail.com'),
-(10002, 20000, 2, 'chrishou118@gmail.com'),
-(10003, 12000, 1, 'chienshin1@gmail.com'),
-(10004, 34000, 3, 'ambersun1234@gmail.com'),
-(10005, 46000, 4, 'nan.ding@gmail.com');
+(10000, 1, 'carolihuan@gmail.com'),
+(20000, 2, 'chrishou118@gmail.com'),
+(12000, 1, 'chienshin1@gmail.com'),
+(34000, 3, 'ambersun1234@gmail.com'),
+(46000, 4, 'nan.ding@gmail.com');
 
 INSERT INTO stay VALUES
-(10001, '2015-04-21', '2015-04-22', 0, 120, 0, 500001, 'carolihuan@gmail.com', 101, 'AAA', 200001),
-(10002, '2015-04-25', '2015-04-27', 0, 187, 0, 500002, 'chrishou118@gmail.com', 102, 'Government', 200002),
-(10003, '2015-04-20', '2015-04-22', 0, 198, 300, 500003, 'chienshin1@gmail.com', 201, 'Member', 200003);
+('2015-04-21', '2015-04-22', 0, 120, 0, 500001, 'carolihuan@gmail.com', 101, 'AAA', 200001),
+('2015-04-25', '2015-04-27', 0, 187, 0, 500002, 'chrishou118@gmail.com', 102, 'Government', 200002),
+('2015-04-20', '2015-04-22', 0, 198, 300, 500003, 'chienshin1@gmail.com', 201, 'Member', 200003);
 
 INSERT INTO service_ordered VALUES
 (1, 10001, '2015-04-22', 3);

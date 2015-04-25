@@ -14,7 +14,7 @@ CREATE TABLE customer (
 );
 
 CREATE TABLE membership (
-	member_id         integer not null,
+	member_id         integer not null AUTO_INCREMENT=10000,
 	points            integer,
 	level             integer,
 	c_email           varchar(25) not null,
@@ -63,7 +63,7 @@ CREATE TABLE ballroom (
 );
 
 CREATE TABLE stay (
-	stay_id           integer not null,
+	stay_id           integer not null AUTO_INCREMENT=10000,
 	check_in_date     date,
 	check_out_date    date,
 	point_amount      integer,
@@ -82,7 +82,7 @@ CREATE TABLE stay (
 );
 
 CREATE TABLE invoice (
-	invoice_id         integer not null,
+	invoice_id         integer not null AUTO_INCREMENT=10000,
 	point_amount       integer,
 	cash_amount        integer,
 	credit_card_amount integer,
@@ -101,14 +101,14 @@ CREATE TABLE service_ordered (
 );
 
 CREATE TABLE service (
-	service_id         integer not null,
+	service_id         integer not null AUTO_INCREMENT,
 	service_name       varchar(10),
 	price              real,
 	primary key (service_id)
 );
 
 CREATE TABLE event (
-	event_id           integer not null,
+	event_id           integer not null AUTO_INCREMENT,
 	event_name         varchar(25),
 	number_of_people   integer,
 	primary key (event_id)
