@@ -14,7 +14,7 @@ CREATE TABLE customer (
 );
 
 CREATE TABLE membership (
-	member_id         integer not null AUTO_INCREMENT=10000,
+	member_id         integer not null AUTO_INCREMENT,
 	points            integer,
 	level             integer,
 	c_email           varchar(25) not null,
@@ -22,6 +22,7 @@ CREATE TABLE membership (
 	foreign key (c_email) references customer(email)
 );
 
+ALTER TABLE membership AUTO_INCREMENT=10000;
 
 CREATE TABLE promotion (
 	promo_name       	   varchar(30) not null,
@@ -63,7 +64,7 @@ CREATE TABLE ballroom (
 );
 
 CREATE TABLE stay (
-	stay_id           integer not null AUTO_INCREMENT=10000,
+	stay_id           integer not null AUTO_INCREMENT,
 	check_in_date     date,
 	check_out_date    date,
 	point_amount      integer,
@@ -80,9 +81,10 @@ CREATE TABLE stay (
 	foreign key (invoice_id) references invoice(invoice_id),
 	foreign key (promo_name) references promotion(promo_name)
 );
+ALTER TABLE stay AUTO_INCREMENT=10000;
 
 CREATE TABLE invoice (
-	invoice_id         integer not null AUTO_INCREMENT=10000,
+	invoice_id         integer not null AUTO_INCREMENT,
 	point_amount       integer,
 	cash_amount        integer,
 	credit_card_amount integer,
@@ -90,6 +92,7 @@ CREATE TABLE invoice (
 	invoice_date       date,
 	primary key (invoice_id)
 );
+ALTER TABLE invoice AUTO_INCREMENT=10000;
 
 CREATE TABLE service_ordered (
 	service_id         integer not null,
