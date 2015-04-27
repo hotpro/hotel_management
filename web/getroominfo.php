@@ -49,7 +49,7 @@
         $query = "SELECT * FROM room";
 
         // Fetch the matching database table rows.
-        $data = $con->query($query);        
+        $data = $con->query($query);
         $data->setFetchMode(PDO::FETCH_CLASS, "Room");
 
         // We're going to construct an HTML table.
@@ -78,14 +78,14 @@
         // Fetch the matching database table rows.
         $ps->execute();
         $ps->setFetchMode(PDO::FETCH_CLASS, "Room");
-        
+
         // Construct the HTML table row by row.
         while ($room = $ps->fetch()) {
             print "        <tr>\n";
             createTableRow($room);
             print "        </tr>\n";
         }
-        
+
         print "    </table>\n";
       } catch(PDOException $ex) {
         echo 'ERROR: '.$ex->getMessage();

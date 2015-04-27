@@ -1,5 +1,5 @@
 <?php
-mysql_connect('localhost', 'root', 'dora');
+mysql_connect('localhost', 'root', '');
 mysql_select_db('hotel');
 
 ?>
