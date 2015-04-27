@@ -38,6 +38,10 @@ CREATE TABLE promo_room (
 	room_type              varchar(10),
 	promo_name	           varchar(30) not null,
 	primary key (room_type, promo_name)
+	foreign key (promo_name) references promotion(promo_name)
+		ON DELETE CASCADE	ON UPDATE CASCADE
+    -- foreign key (room_type) references room(type)
+		-- ON DELETE CASCADE	ON UPDATE CASCADE
 );
 
 CREATE TABLE room (
