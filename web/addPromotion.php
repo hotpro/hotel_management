@@ -24,34 +24,41 @@
     }
     
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = test_input($_POST["name"]);
-    $startdate = test_input($_POST["startdate"]);
-    $enddate = test_input($_POST["enddate"]);
-    $discount = $_POST["discount"];
-    $pointbonus = $_POST["pointbonus"];
-    $duration = $_POST["duration"];
+        $name = test_input($_POST["name"]);
+        $startdate = test_input($_POST["startdate"]);
+        $enddate = test_input($_POST["enddate"]);
+        $discount = $_POST["discount"];
+        $pointbonus = $_POST["pointbonus"];
+        $duration = $_POST["duration"];
     
-    $sql = "INSERT INTO promotion (promo_name, start_date, end_date, discount_amount, extra_bonus_point, required_stay_duration)
-    VALUES ('$name', '$startdate','$enddate', $discount, $pointbonus, $duration)";
-    
-    $exec = mysqli_query($conn, $sql); 
+        $sql = "INSERT INTO promotion (promo_name, start_date, end_date, discount_amount, extra_bonus_point, required_stay_duration)
+        VALUES ('$name', '$startdate','$enddate', $discount, $pointbonus, $duration)";
+        
+        if (mysqli_query($conn, $sql)) {
+            echo "New record created successfully ";
+        } else {
+            echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+        }
      
-    if(isset($_POST["type"])){
-        $type=$_POST["type"];
-        $sql_1="INSERT INTO promo_room VALUES ('$type', '$name')";
-        $exec = mysqli_query($conn, $sql_1); 
-    }
-    if(isset($_POST["type1"])){
-        $type1=$_POST["type1"];
-        $sql_2="INSERT INTO promo_room VALUES ('$type1', '$name')";
-        $exec = mysqli_query($conn, $sql_2); 
-    }
-    
-    if (mysqli_query($conn, $sql)) {
-     echo "New record created successfully";
-    } else {
-     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-    }
+        if(isset($_POST["type"])){
+            $type=$_POST["type"];
+            $sql_1="INSERT INTO promo_room VALUES ('$type', '$name')";
+            if (mysqli_query($conn, $sql_1)) {
+                echo "New record created successfully ";
+            } else {
+                echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+            }
+        }
+        
+        if(isset($_POST["type1"])){
+            $type1=$_POST["type1"];
+            $sql_2="INSERT INTO promo_room VALUES ('$type1', '$name')";
+            if (mysqli_query($conn, $sql_2)) {
+                echo "New record created successfully ";
+            } else {
+                echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+            }
+        }
     }
     
     function test_input($data) {

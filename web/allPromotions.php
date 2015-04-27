@@ -12,9 +12,32 @@
 <?php include 'return_to_home.php';?>
 </div>
 <h2>Promotions</h2>
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+Input promotion name to delete:<br>
+<input type="text" name="deletename">
+<input type="submit" value="Submit" />
+</form>
+
 <?php
     include 'connection.php';
-    //$roomtype="";
+    
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $deletename = test_input($_POST["deletename"]);
+        $sql = "DELETE FROM promotion WHERE promo_name='$deletename'";
+        //$exec = mysql_query($sql); 
+        if (mysql_query($sql)) {
+            echo "Record deleted successfully";
+        } else {
+            echo "Error deleting record: " . mysql_error($conn);
+        }
+    }
+    
+     function test_input($data) {
+   $data = trim($data);
+   $data = stripslashes($data);
+   $data = htmlspecialchars($data);
+   return $data;
+   }
     
     $query = "select *  FROM promotion";
     $result = mysql_query($query);
