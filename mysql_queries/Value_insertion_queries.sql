@@ -12,20 +12,20 @@ INSERT INTO promotion VALUES
 ('Government', '2000-01-01', '2100-01-01', 0.15, 0, 1),
 ('Senior','2000-01-01', '2100-01-01', 0.15, 0, 1),
 ('Member', '2000-01-01', '2100-01-01', 0.1, 300, 2),
-('2015 Member summer promo', '2015-04-15', '2015-08-15', 0, 500, 3),
-('2015 Spring promo', '2015-03-01', '2015-04-15', 0.2, 0, 3),
-('2015 May promo', '2015-05-01', '2015-05-30', 0.1, 0, 3),
-('2015 May Ballroom promo', '2015-05-01', '2015-05-20', 0.1, 0, 3);
+('2015 summer', '2015-04-15', '2015-08-15', 0, 500, 3),
+('2015 Spring', '2015-03-01', '2015-04-15', 0.2, 0, 3),
+('2015 May', '2015-05-01', '2015-05-30', 0.1, 0, 3),
+('2015 May Ballroom', '2015-05-01', '2015-05-20', 0.1, 0, 3);
 
 INSERT INTO promo_room VALUES
 ('Standard', 'AAA'),
 ('Standard', 'Government'),
 ('Standard', 'Senior'),
 ('Standard', 'Member'),
-('Standard', '2015 Member summer promo'),
-('Standard', '2015 Spring promo'),
-('Standard', '2015 May promo'),
-('Ballroom', '2015 May Ballroom promo'),
+('Standard', '2015 summer'),
+('Standard', '2015 Spring'),
+('Standard', '2015 May'),
+('Ballroom', '2015 May Ballroom '),
 ('Ballroom', 'AAA');
 
 INSERT INTO room VALUES
@@ -46,12 +46,6 @@ INSERT INTO guest_room VALUES
 (202, 'Double'),
 (301, 'Single'),
 (302, 'Double');
-
-INSERT INTO invoice (point_amount, cash_amount, credit_card_amount, mailing_address, invoice_date)
-VALUES 
-(0, 0, 120, '1 Washington Sq, San Jose, CA 95192', '2015-04-22'),
-(0, 187, 0, '1 Washington Sq, San Jose, CA 95192', '2015-04-27'),
-(0, 100, 98, '1 Washington Sq, San Jose, CA 95192', '2015-04-22');
 
 INSERT INTO ballroom VALUES
 (103, 1000),
@@ -89,12 +83,18 @@ VALUES
 (34000, 3, 'ambersun1234@gmail.com'),
 (46000, 4, 'nan.ding@gmail.com');
 
-INSERT INTO stay (check_in_date, check_out_date, point_amount, money_amount, bonus_point, reserve_no, 
-c_email, room_id, promo_name, invoice_id )
+INSERT INTO stay (check_in_date, check_out_date, point_amount, money_amount, bonus_point,
+c_email, room_id, promo_name)
 VALUES
-('2015-04-21', '2015-04-22', 0, 120, 0, 500001, 'carolihuan@gmail.com', 101, 'AAA', 10000),
-('2015-04-25', '2015-04-27', 0, 187, 0, 500002, 'chrishou118@gmail.com', 102, 'Government', 10001),
-('2015-04-20', '2015-04-22', 0, 198, 300, 500003, 'chienshin1@gmail.com', 201, 'Member', 10002);
+('2015-04-21', '2015-04-22', 0, 120, 0, 'carolihuan@gmail.com', 101, 'AAA'),
+('2015-04-25', '2015-04-27', 0, 187, 0, 'chrishou118@gmail.com', 102, 'Government'),
+('2015-04-20', '2015-04-22', 0, 198, 300, 'chienshin1@gmail.com', 201, 'Member');
+
+INSERT INTO invoice (point_amount, cash_amount, credit_card_amount, mailing_address, invoice_date, stay_id)
+VALUES 
+(0, 0, 120, '1 Washington Sq, San Jose, CA 95192', '2015-04-22', 10000),
+(0, 187, 0, '1 Washington Sq, San Jose, CA 95192', '2015-04-27', 10001),
+(0, 100, 98, '1 Washington Sq, San Jose, CA 95192', '2015-04-22', 10002);
 
 INSERT INTO service_ordered VALUES
 (1, 10001, '2015-04-22', 3);

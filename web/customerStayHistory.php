@@ -49,11 +49,11 @@
     $result = mysql_query($query);
     
     if(!empty($result)){
-    echo "<table><tr><th>Email</th><th>reservation#</th><th>Room#</th><th>Check-in date</th>
+    echo "<table><tr><th>Email</th><th>Stay ID</th><th>Room#</th><th>Check-in date</th>
         <th>Check-out date</th><th>Money amount</th><th>Point amount</th><th>Bonus point
         </th><th>Promotion</th>";
     while($stay = mysql_fetch_array($result)){
-        echo "<tr><td>".$stay["c_email"]."</td><td>".$stay["reserve_no"]."</td><td>"
+        echo "<tr><td>".$stay["c_email"]."</td><td>".$stay["stay_id"]."</td><td>"
         .$stay["room_id"]."</td><td>".$stay["check_in_date"]."</td><td>"
         .$stay["check_out_date"]."</td><td>".$stay["money_amount"]."</td><td>".$stay["point_amount"].
         "</td><td>".$stay["bonus_point"]."</td><td>".$stay["promo_name"]."</td></tr>";

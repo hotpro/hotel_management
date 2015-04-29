@@ -74,15 +74,12 @@ CREATE TABLE stay (
 	point_amount      integer,
 	money_amount      integer,
 	bonus_point       integer,
-	reserve_no        integer,
 	c_email           varchar(25) not null,
 	room_id           integer not null,
-	promo_name	      varchar(30) not null,
-	invoice_id        integer not null,
+	promo_name	      varchar(30),
 	primary key (stay_id),
 	foreign key (c_email) references customer(email),
 	foreign key (room_id) references room(room_id),
-	foreign key (invoice_id) references invoice(invoice_id),
 	foreign key (promo_name) references promotion(promo_name)
 );
 ALTER TABLE stay AUTO_INCREMENT=10000;
@@ -94,7 +91,9 @@ CREATE TABLE invoice (
 	credit_card_amount integer,
 	mailing_address    varchar(50),
 	invoice_date       date,
-	primary key (invoice_id)
+    stay_id			   integer not null,
+	primary key (invoice_id),
+    foreign key (stay_id) references stay(stay_id)
 );
 ALTER TABLE invoice AUTO_INCREMENT=10000;
 
