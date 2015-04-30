@@ -44,22 +44,6 @@ CREATE TABLE promo_room (
 		-- ON DELETE CASCADE	ON UPDATE CASCADE
 );
 
--- add room_price table --yutao
-CREATE TABLE room_price (
-	room_type			varchar(10),
-    room_level			varchar(10),
-    max_capacity		integer,
-    cash_rate			integer,
-    point_rate			integer,
-    primary key (room_type, room_level, max_capacity),
-    foreign key (room_type) references room(type)
-		ON DELETE CASCADE	ON UPDATE CASCADE,
-	foreign key (room_level) references guest_room(room_level)
-		ON DELETE CASCADE	ON UPDATE CASCADE,
-	foreign key (max_capacity) references room(max_capacity)
-		ON DELETE CASCADE	ON UPDATE CASCADE
-);
-
 CREATE TABLE room (
 	room_id            integer not null,
 	max_capacity       integer,
@@ -79,6 +63,17 @@ CREATE TABLE ballroom (
 	area               integer,
 	primary key (room_id),
 	foreign key (room_id) references room(room_id)
+);
+
+
+-- add room_price table --yutao
+CREATE TABLE room_price (
+	room_type			varchar(10),
+    room_level			varchar(10),
+    max_capacity		integer,
+    cash_rate			integer,
+    point_rate			integer,
+    primary key (room_type, room_level, max_capacity)
 );
 
 CREATE TABLE stay (

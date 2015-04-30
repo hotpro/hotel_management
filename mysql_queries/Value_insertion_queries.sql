@@ -29,15 +29,22 @@ INSERT INTO promo_room VALUES
 ('Ballroom', 'AAA');
 
 INSERT INTO room VALUES
-(101, 100, 1000, 2, 'Standard'),
-(102, 110, 1100, 2, 'Standard'),
-(103, 110, 1100, 68, 'Ballroom'),
-(201, 110, 1100, 2, 'Standard'),
-(202, 110, 1100, 2, 'Standard'),
-(203, 110, 1100, 88, 'Ballroom'),
-(301, 110, 1100, 2, 'Standard'),
-(302, 110, 1100, 2, 'Standard'),
-(303, 200, 2000, 128, 'Ballroom');
+(101, 2, 'Standard'),
+(102, 2, 'Standard'),
+(103, 68, 'Ballroom'),
+(201, 2, 'Standard'),
+(202, 2, 'Standard'),
+(203, 88, 'Ballroom'),
+(301, 2, 'Standard'),
+(302, 2, 'Standard'),
+(303, 128, 'Ballroom');
+
+INSERT INTO room_price VALUES
+('Standard', 'Single', 2, 100, 1000),
+('Standard', 'Double', 2, 110, 1100),
+('Ballrom', NULL, 68, 110, 1100),
+('Ballrom', NULL, 88, 110, 1100),
+('Ballrom', NULL, 128, 200, 2000);
 
 INSERT INTO guest_room VALUES
 (101, 'Single'),
