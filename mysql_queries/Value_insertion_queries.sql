@@ -50,9 +50,9 @@ INSERT INTO room VALUES
 INSERT INTO room_price VALUES
 ('Standard', 2, 100, 1000),
 ('Standard', 4, 110, 1100),
-('Ballrom', 68, 110, 1100),
-('Ballrom', 88, 110, 1100),
-('Ballrom', 128, 200, 2000);
+('Ballroom', 68, 110, 1100),
+('Ballroom', 88, 110, 1100),
+('Ballroom', 128, 200, 2000);
 
 INSERT INTO guest_room VALUES
 (101, 'Single'),
