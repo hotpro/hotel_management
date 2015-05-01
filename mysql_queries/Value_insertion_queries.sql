@@ -5,6 +5,8 @@ INSERT INTO customer VALUES
 ('chrishou118@gmail.com', 'Yutao', 'Hou', 'SJSU', '1 Washington Sq, San Jose, CA 95192', '4089241001'),
 ('chienshin1@gmail.com', 'Jianxin', 'Gao', 'SJSU', '1 Washington Sq, San Jose, CA 95192', '4089241002'),
 ('ambersun1234@gmail.com', 'Chiunghui', 'Tseng', 'SJSU', '1 Washington Sq, San Jose, CA 95192', '4089241003'),
+('jackson@hotmail.com', 'Jackson', 'King', 'Ruffle Tech', '475 mission blvd, Houston, TX 74885', '5124587458'),
+('norma@star.com', 'Normal', 'Juan', 'Taco Car', '745 1st street, Miami, FL 48571', '9687452541'),
 ('nan.ding@gmail.com', 'Nan', 'Ding', 'SJSU', '1 Washington Sq, San Jose, CA 95192', '4089241004');
 
 INSERT INTO promotion VALUES
@@ -30,14 +32,20 @@ INSERT INTO promo_room VALUES
 
 INSERT INTO room VALUES
 (101, 2, 'Standard'),
-(102, 2, 'Standard'),
+(102, 4, 'Standard'),
 (103, 68, 'Ballroom'),
 (201, 2, 'Standard'),
-(202, 2, 'Standard'),
+(202, 4, 'Standard'),
 (203, 88, 'Ballroom'),
 (301, 2, 'Standard'),
-(302, 2, 'Standard'),
-(303, 128, 'Ballroom');
+(302, 4, 'Standard'),
+(303, 128, 'Ballroom'),
+(401, 2, 'Standard'),
+(402, 4, 'Standard'),
+(403, 2, 'Standard'),
+(501, 68, 'Ballroom'),
+(502, 88, 'Ballroom'),
+(503, 128, 'Ballroom');
 
 INSERT INTO room_price VALUES
 ('Standard', 2, 100, 1000),
@@ -52,12 +60,18 @@ INSERT INTO guest_room VALUES
 (201, 'Single'),
 (202, 'Double'),
 (301, 'Single'),
-(302, 'Double');
+(302, 'Double'),
+(401, 'Single'),
+(402, 'Double'),
+(403, 'Single');
 
 INSERT INTO ballroom VALUES
 (103, 1000),
 (203, 2000),
-(303, 1200);
+(303, 3000),
+(501, 1000),
+(502, 2000),
+(503, 3000);
 
 INSERT INTO event (event_name, number_of_people) 
 VALUES
@@ -88,7 +102,9 @@ VALUES
 (20000, 2, 'chrishou118@gmail.com'),
 (12000, 1, 'chienshin1@gmail.com'),
 (34000, 3, 'ambersun1234@gmail.com'),
-(46000, 4, 'nan.ding@gmail.com');
+(46000, 4, 'nan.ding@gmail.com'),
+(80000, 5, 'jackson@hotmail.com'),
+(56000, 4, 'norma@star.com');
 
 INSERT INTO stay (check_in_date, check_out_date, point_amount, money_amount, bonus_point,
 c_email, room_id, promo_name)
