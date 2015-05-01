@@ -69,11 +69,10 @@ CREATE TABLE ballroom (
 -- add room_price table --yutao
 CREATE TABLE room_price (
 	room_type			varchar(10),
-    room_level			varchar(10),
     max_capacity		integer,
     cash_rate			integer,
     point_rate			integer,
-    primary key (room_type, room_level, max_capacity)
+    primary key (room_type, max_capacity)
 );
 
 CREATE TABLE stay (
