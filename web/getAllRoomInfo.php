@@ -33,7 +33,6 @@
 <br><h2>Ballrooms</h2>
 <?php
 
-    $query = "select * from room, ballroom WHERE room.room_id=ballroom.room_id";
     $query = "select 	R.room_id, RP.cash_rate, RP.point_rate, R.max_capacity
               FROM 	room R, room_price RP, ballroom B
               WHERE 	B.room_id=R.room_id AND R.type=RP.room_type AND R.max_capacity=RP.max_capacity;";
