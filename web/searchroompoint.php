@@ -65,9 +65,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $promo=null;
     }
     
-    $query="select	G.room_id, room_level, cash_rate, point_rate, max_capacity
-            from		guest_room G, room R
-            where		G.room_id=R.room_id and G.room_id not in
+    $query="select	G.room_id, G.room_level, RP.cash_rate, RP.point_rate, R.max_capacity
+            from		guest_room G, room R, room_price RP
+            where		G.room_id=R.room_id and R.type=RP.room_type 
+                        AND R.max_capacity=RP.max_capacity and G.room_id not in
 		                (select	room_id
                         from	stay
                         where	check_out_date>'$checkin' and check_in_date<'$checkout')";

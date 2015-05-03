@@ -33,17 +33,17 @@
 <br><h2>Ballrooms</h2>
 <?php
 
-    $query = "select 	R.room_id, RP.cash_rate, RP.point_rate, R.max_capacity
-              FROM 	room R, room_price RP, ballroom B
+    $query = "select 	R.room_id, RP.cash_rate, RP.point_rate, R.max_capacity, B.area
+              FROM 	    room R, room_price RP, ballroom B
               WHERE 	B.room_id=R.room_id AND R.type=RP.room_type AND R.max_capacity=RP.max_capacity;";
 
     $result = mysql_query($query);
 
     echo "<table><tr><th>Room ID</th><th>Cash_rate</th><th>Point_rate</th>
-        <th>Max_capacity</th>";
+        <th>Max_capacity</th><th>Area</th>";
     while($room = mysql_fetch_array($result)){
         echo "<tr><td>".$room["room_id"]."</td><td>".$room["cash_rate"]."</td><td>"
-        .$room["point_rate"]."</td><td>".$room["max_capacity"]."</td></tr>";
+        .$room["point_rate"]."</td><td>".$room["max_capacity"]."</td><td>".$room["area"]."</td></tr>";
     }
     echo "</table>";
 ?>

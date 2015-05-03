@@ -59,15 +59,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if($promoname=mysql_fetch_array($resulta)){
         $discount=$promoname["discount_amount"];
         $bonus_point=$promoname["extra_bonus_point"];
-        }
+    }
     else{
         echo "No available promotion<br>";
         $promo=null;
     }
     
-    $query="select	G.room_id, room_level, cash_rate, point_rate, max_capacity
-            from		guest_room G, room R
-            where		G.room_id=R.room_id and G.room_id not in
+    $query="select	    G.room_id, G.room_level, RP.cash_rate, RP.point_rate, R.max_capacity
+            from		guest_room G, room R, room_price RP
+            where		G.room_id=R.room_id and R.type=RP.room_type 
+                        AND R.max_capacity=RP.max_capacity and G.room_id not in
 		                (select	room_id
                         from	stay
                         where	check_out_date>'$checkin' and check_in_date<'$checkout')";
@@ -81,16 +82,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $_SESSION['bonus_point']=$bonus_point;
     $_SESSION['promo']=$promo; 
     
-    echo "<table><tr><th>Room#</th><th>Room level</th><th>Total price</th>
-        <th>Point rate</th><th>Max_capacity</th><th></th>";
-    while($room = mysql_fetch_array($result)){
-        $roomnumber=$room["room_id"];
-        $totalprice=($room["cash_rate"]*$nights)*(1-$discount);
-        echo "<tr><td>".$room["room_id"]."</td><td>".$room["room_level"]."</td><td>"
-        .$totalprice."</td><td>".$room["point_rate"]."</td><td>".$room["max_capacity"].
-        "</td><td><a href='bookRoom.php?room=$roomnumber&price=$totalprice'>Book</a></td></tr>";
+    if(empty($result)){
+        echo "<p>No available room.</p>";
     }
-    echo "</table>";
+    else{
+        echo "<table><tr><th>Room#</th><th>Room level</th><th>Total price</th>
+            <th>Point rate</th><th>Max_capacity</th><th></th>";
+        while($room = mysql_fetch_array($result)){
+            $roomnumber=$room["room_id"];
+            $totalprice=($room["cash_rate"]*$nights)*(1-$discount);
+            echo "<tr><td>".$room["room_id"]."</td><td>".$room["room_level"]."</td><td>"
+            .$totalprice."</td><td>".$room["point_rate"]."</td><td>".$room["max_capacity"].
+            "</td><td><a href='bookRoom.php?room=$roomnumber&price=$totalprice'>Book</a></td></tr>";
+        }
+        echo "</table>";
+    }
 }
         
 ?>
