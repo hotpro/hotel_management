@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hotel Management</title>
+  <link rel="stylesheet" href="css/table.css" /> 
+  <script language="javascript" type="text/javascript" src="dist/jquery.js"></script>
+  <script language="javascript" type="text/javascript" src="dist/jquery.jqplot.js"></script>
+  <link rel="stylesheet" type="text/css" href="dist/jquery.jqplot.css" />  
+  <script src="dist/plugins/jqplot.dateAxisRenderer.js"></script>
+  
+
+</head>
+<body>
+  <a href="index.html">Home</a>
+
+  <h2>Check Occupation Rate</h2>
+  <form id="input"> 
+    <fieldset>
+         <legend>User Input</legend>
+          <p>
+          <label>Start date:</label>
+          <input type="date" name="startdate">
+          </p>
+          <p>
+          <label>End date:</label>
+          <input type="date" name="enddate">
+          </p>
+          <p>
+          <input type="submit" value="Submit" />
+          </p>
+    </fieldset>
+  </form>
+
+  <div id="table"></div>
+
+  <p>
+    <div id="chart1" style="height:300px; width:650px;"></div>
+  </p>
+
+  <script type="text/javascript">
+    $(init);
+
+    function init()
+    {
+      // Set up an event listener for the contact form.
+      $("#input").submit(function(event) {
+          // Stop the browser from submitting the form.
+          event.preventDefault();
+
+          // Serialize the form data.
+          var formData = $("#input").serialize();
+
+          console.log(formData);
+
+          // Submit the form using AJAX.
+          $.ajax({
+              type:   'POST',
+              url:    'occupationrate.php',
+              data:   formData
+          })
+          .done(function(response) {
+            $("#table").html(response);
+          });
+
+          // Submit the form using AJAX.
+          $.ajax({
+              type:   'POST',
+              url:    'occupationrate_json.php',
+              data:   formData
+          })
+          .done(function(response) {
+              // Set the message text.
+              console.log(response);
+              
+              var json = JSON.parse(response);
+              console.log(json);
+
+              $("#chart1").empty();
+
+              var plot1 = $.jqplot('chart1', [json], {
+                title:'Occupation Date Chart',
+                axes:{xaxis:{renderer:$.jqplot.DateAxisRenderer}},
+                series:[{lineWidth:4, markerOptions:{style:'square'}}]
+              });              
+
+          })
+          .fail(function(data) {
+              alert('Oops! An error occured and your message could not be sent.');              
+          });                          
+
+      });
+    }
+
+  </script>
+
+  
+</body>
+</html>
