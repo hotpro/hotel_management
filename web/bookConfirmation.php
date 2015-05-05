@@ -64,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     echo "<p>Room#: ".$roomid."</p>";
                     echo "<p>Check-in date: ".$checkin."</p>";
                     echo "<p>Check-out date: ".$checkout."</p>";
-                    echo "<p>Total price: ".$price."</p>";
+                    echo "<p>Total price: $".$price."</p>";
                     echo "<p>Promotion name: ".$promo."</p>";
                     echo "<p>Bonus points: ".$bonus_point."</p>";
                     echo "<p>Name: ".$firstname." ".$lastname."</p>";
