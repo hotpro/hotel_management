@@ -28,7 +28,7 @@
           </p>
           <p>
           <label>Quantity:</label>
-          <input type="text" name="quantity">
+          <input type="number" name="quantity" value=1 min=1 max=20>
           </p>
           <p>
           <input type="submit" value="Confirm" />

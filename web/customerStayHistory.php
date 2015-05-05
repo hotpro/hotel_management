@@ -34,6 +34,10 @@
           <input type="text" name="Cemail">
           </p>
           <p>
+          <label>Password:</lable>
+          <input type="password" name="password">
+          </p>
+          <p>
           <input type="submit" name="submit" value="Submit">
           </p>
     </fieldset>
@@ -42,21 +46,22 @@
     
     
 <?php    
-    $query = "select	*
-            FROM	stay S
-            WHERE	c_email='$Cemail'";
+    $query = "select	I.invoice_id, S.check_in_date, S.check_out_date, I.cash_amount, 
+            I.credit_card_amount, I.point_amount
+            FROM	invoice I, stay S
+            WHERE	I.stay_id=S.stay_id AND S.c_email='$Cemail'";
     
     $result = mysql_query($query);
     
     if(!empty($result)){
-    echo "<table><tr><th>Email</th><th>Stay ID</th><th>Room#</th><th>Check-in date</th>
-        <th>Check-out date</th><th>Money amount</th><th>Point amount</th><th>Bonus point
-        </th><th>Promotion</th>";
+    echo "<table><tr><th>Invoice ID</th><th>Check-in date</th><th>Check-out date</th><th>Cash amount</th>
+        <th>Credit card amount</th><th>Point amount</th>";
     while($stay = mysql_fetch_array($result)){
-        echo "<tr><td>".$stay["c_email"]."</td><td>".$stay["stay_id"]."</td><td>"
-        .$stay["room_id"]."</td><td>".$stay["check_in_date"]."</td><td>"
-        .$stay["check_out_date"]."</td><td>".$stay["money_amount"]."</td><td>".$stay["point_amount"].
-        "</td><td>".$stay["bonus_point"]."</td><td>".$stay["promo_name"]."</td></tr>";
+        $invoiceid=$stay["invoice_id"];
+        echo "<tr><td>".$invoiceid."</td><td>".$stay["check_in_date"]."</td><td>"
+        .$stay["check_out_date"]."</td><td>".$stay["cash_amount"]."</td><td>"
+        .$stay["credit_card_amount"]."</td><td>".$stay["point_amount"]."</td><td>
+        <a href='getinvoice.php?invoiceid=$invoiceid'>View invoice</a></td></tr>";
     }
     echo "</table>";
     }

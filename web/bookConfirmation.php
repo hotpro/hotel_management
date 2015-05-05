@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //if the customer does not exist, add it to table
     else
     {
-        $customersql="INSERT INTO customer  VALUES ('$cemail', '$firstname', '$lastname', '$companyname',
+        $customersql="INSERT INTO customer  VALUES ('$email', '$firstname', '$lastname', '$companyname',
         '$address', '$phone')";
     }
     

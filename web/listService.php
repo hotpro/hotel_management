@@ -5,6 +5,7 @@
   <title>Hotel Management</title>
     <link rel="stylesheet" href="css/table.css">
 </head>
+<body>
 <?php
 include 'connection.php';
 include 'return_to_home.php';

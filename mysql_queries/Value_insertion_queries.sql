@@ -111,7 +111,11 @@ c_email, room_id, promo_name)
 VALUES
 ('2015-04-21', '2015-04-22', 0, 120, 0, 'carolihuan@gmail.com', 101, 'AAA'),
 ('2015-04-25', '2015-04-27', 0, 187, 0, 'chrishou118@gmail.com', 102, 'Government'),
-('2015-04-20', '2015-04-22', 0, 198, 300, 'chienshin1@gmail.com', 201, 'Member');
+('2015-04-20', '2015-04-22', 0, 198, 300, 'chienshin1@gmail.com', 201, 'Member'),
+('2015-05-06', '2015-05-08', 0, 198, 300, 'chienshin1@gmail.com', 202, 'Member'),
+('2015-05-01', '2015-05-02', 0, 120, 0, 'carolihuan@gmail.com', 201, 'Member'),
+('2015-05-07', '2015-05-09', 0, 187, 0, 'chrishou118@gmail.com', 102, 'Government'),
+('2015-05-05', '2015-05-11', 0, 660, 0, 'safwaef@gmail.com', 102, null);
 
 INSERT INTO invoice (point_amount, cash_amount, credit_card_amount, mailing_address, invoice_date, stay_id)
 VALUES 

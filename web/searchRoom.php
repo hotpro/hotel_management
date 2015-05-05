@@ -7,6 +7,7 @@
 </head>
 <?php
 include 'connection.php';
+include 'return_to_home.php';
 session_start();
 ?>
 

@@ -51,7 +51,8 @@ Input stay ID to cancel a reservation:<br>
         echo "<tr><td>".$stayid."</td><td>".$stay["room_id"]."</td><td>".$stay["check_in_date"]."</td><td>"
         .$stay["check_out_date"]."</td><td>".$stay["point_amount"]."</td><td>".$stay["money_amount"].
         "</td><td>".$stay["bonus_point"]."</td><td>".$stay["c_email"]."</td><td>".$stay["promo_name"].
-        "</td><td><a href='checkout.php?stayid=$stayid'>check out</a></td></tr>";
+        "</td><td><a href='viewService.php?stayid=$stayid'>View services</a></td>
+        <td><a href='checkout.php?stayid=$stayid'>Check out</a></td></tr>";
     }
     echo "</table>";
     
