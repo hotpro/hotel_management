@@ -9,6 +9,7 @@
 <?php
     include 'connection.php';
     include 'return_to_home.php';
+    echo " - <a href='customerReservation.php'>Back</a>";
     $stayid = $_GET["stayid"];
     $sql = "DELETE FROM stay WHERE stay_id='$stayid'";
     if (mysql_query($sql)) {
