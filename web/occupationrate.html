@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <title>Hotel Management</title>
-  <link rel="stylesheet" href="css/table.css" /> 
+  <link rel="stylesheet" href="css/table.css" />
   <script language="javascript" type="text/javascript" src="dist/jquery.js"></script>
   <script language="javascript" type="text/javascript" src="dist/jquery.jqplot.js"></script>
-  <link rel="stylesheet" type="text/css" href="dist/jquery.jqplot.css" />  
+  <link rel="stylesheet" type="text/css" href="dist/jquery.jqplot.css" />
   <script src="dist/plugins/jqplot.dateAxisRenderer.js"></script>
-  
+
 
 </head>
 <body>
   <a href="index.html">Home</a>
 
   <h2>Check Occupation Rate</h2>
-  <form id="input"> 
+  <form id="input">
     <fieldset>
          <legend>User Input</legend>
           <p>
@@ -35,7 +35,7 @@
   <div id="table"></div>
 
   <p>
-    <div id="chart1" style="height:300px; width:650px;"></div>
+    <div id="chart1" style="height:300px; width:1000px;"></div>
   </p>
 
   <script type="text/javascript">
@@ -72,7 +72,7 @@
           .done(function(response) {
               // Set the message text.
               console.log(response);
-              
+
               var json = JSON.parse(response);
               console.log(json);
 
@@ -82,18 +82,18 @@
                 title:'Occupation Date Chart',
                 axes:{xaxis:{renderer:$.jqplot.DateAxisRenderer}},
                 series:[{lineWidth:4, markerOptions:{style:'square'}}]
-              });              
+              });
 
           })
           .fail(function(data) {
-              alert('Oops! An error occured and your message could not be sent.');              
-          });                          
+              alert('Oops! An error occured and your message could not be sent.');
+          });
 
       });
     }
 
   </script>
 
-  
+
 </body>
 </html>
