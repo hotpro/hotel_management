@@ -37,7 +37,7 @@
         
         if(mysql_query($addinvoice)){
             $invoiceid=mysql_insert_id();
-            $member="UPDATE membership SET points=points+$bonus-$point WHERE c_email='email'";
+            $member="UPDATE membership SET points=points+$bonus WHERE c_email='$email'";
             if($memberresult=mysql_query($member)){
                 echo "<h2>Check out successfully</h2>";
                 echo "<h1>Invoice</h1>";
