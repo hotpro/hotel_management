@@ -1,0 +1,80 @@
+[18-Feb-2015 04:03:25 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'CSS_Table_Example' (T_STRING) in /Applications/XAMPP/xamppfiles/htdocs/queryDB.php on line 30
+[19-Mar-2015 07:19:56 Europe/Berlin] PHP Fatal error:  Call to undefined function filter_inut() in /Applications/XAMPP/xamppfiles/htdocs/text.php on line 10
+[19-Mar-2015 07:21:11 Europe/Berlin] PHP Fatal error:  Call to undefined function filter_inut() in /Applications/XAMPP/xamppfiles/htdocs/text.php on line 10
+[19-Mar-2015 07:21:15 Europe/Berlin] PHP Fatal error:  Call to undefined function filter_inut() in /Applications/XAMPP/xamppfiles/htdocs/text.php on line 10
+[19-Mar-2015 07:21:31 Europe/Berlin] PHP Fatal error:  Call to undefined function filter_inut() in /Applications/XAMPP/xamppfiles/htdocs/text.php on line 10
+[19-Mar-2015 07:23:14 Europe/Berlin] PHP Fatal error:  Call to undefined function filter_inut() in /Applications/XAMPP/xamppfiles/htdocs/text.php on line 10
+[19-Mar-2015 08:04:13 Europe/Berlin] PHP Parse error:  syntax error, unexpected '"root"' (T_CONSTANT_ENCAPSED_STRING) in /Applications/XAMPP/xamppfiles/htdocs/queryDB.php on line 17
+[19-Mar-2015 08:11:56 Europe/Berlin] PHP Parse error:  syntax error, unexpected '}' in /Applications/XAMPP/xamppfiles/htdocs/queryDB.php on line 31
+[19-Mar-2015 08:12:20 Europe/Berlin] PHP Notice:  Undefined variable: result in /Applications/XAMPP/xamppfiles/htdocs/queryDB.php on line 25
+[19-Mar-2015 08:12:20 Europe/Berlin] PHP Fatal error:  Call to a member function fetch() on null in /Applications/XAMPP/xamppfiles/htdocs/queryDB.php on line 25
+[19-Mar-2015 08:12:44 Europe/Berlin] PHP Fatal error:  Undefined class constant 'FETECH_ASSOC' in /Applications/XAMPP/xamppfiles/htdocs/queryDB.php on line 25
+[19-Mar-2015 08:26:49 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /Applications/XAMPP/xamppfiles/htdocs/queryDB.php on line 71
+[19-Mar-2015 09:53:45 Europe/Berlin] PHP Notice:  Undefined variable: var in /Applications/XAMPP/xamppfiles/htdocs/querydb1.php on line 35
+[19-Mar-2015 09:53:45 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in /Applications/XAMPP/xamppfiles/htdocs/querydb1.php on line 35
+[19-Mar-2015 09:53:45 Europe/Berlin] PHP Warning:  Division by zero in /Applications/XAMPP/xamppfiles/htdocs/querydb1.php on line 36
+[19-Mar-2015 09:54:02 Europe/Berlin] PHP Notice:  Undefined variable: var in /Applications/XAMPP/xamppfiles/htdocs/querydb1.php on line 35
+[19-Mar-2015 09:54:02 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in /Applications/XAMPP/xamppfiles/htdocs/querydb1.php on line 35
+[19-Mar-2015 09:54:02 Europe/Berlin] PHP Warning:  Division by zero in /Applications/XAMPP/xamppfiles/htdocs/querydb1.php on line 36
+[19-Mar-2015 09:54:12 Europe/Berlin] PHP Notice:  Undefined variable: var in /Applications/XAMPP/xamppfiles/htdocs/querydb1.php on line 35
+[19-Mar-2015 09:54:12 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in /Applications/XAMPP/xamppfiles/htdocs/querydb1.php on line 35
+[19-Mar-2015 09:54:12 Europe/Berlin] PHP Warning:  Division by zero in /Applications/XAMPP/xamppfiles/htdocs/querydb1.php on line 36
+[20-Apr-2015 02:00:41 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/getroominfo.php on line 11
+[20-Apr-2015 02:00:56 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/getroominfo.php on line 11
+[23-Apr-2015 00:11:31 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/getroominfo.php on line 11
+[23-Apr-2015 00:46:26 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/getroominfo.php on line 11
+[23-Apr-2015 00:48:52 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/getroominfo.php on line 11
+[23-Apr-2015 00:48:54 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/getroominfo.php on line 11
+[23-Apr-2015 00:49:55 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'room_id' (T_STRING), expecting variable (T_VARIABLE) in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/getroominfo.php on line 13
+[23-Apr-2015 00:52:04 Europe/Berlin] PHP Catchable fatal error:  Argument 1 passed to createTableRow() must be an instance of Person, instance of Room given, called in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/getroominfo.php on line 75 and defined in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/getroominfo.php on line 26
+[25-Apr-2015 01:48:42 Europe/Berlin] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/connection.php on line 7
+[25-Apr-2015 01:48:42 Europe/Berlin] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/getAllRoomInfo.php on line 26
+[25-Apr-2015 01:48:42 Europe/Berlin] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/getAllRoomInfo.php on line 42
+[25-Apr-2015 01:49:59 Europe/Berlin] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/connection.php on line 7
+[25-Apr-2015 01:49:59 Europe/Berlin] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/getAllRoomInfo.php on line 26
+[25-Apr-2015 01:49:59 Europe/Berlin] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/getAllRoomInfo.php on line 42
+[25-Apr-2015 01:50:03 Europe/Berlin] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/connection.php on line 7
+[25-Apr-2015 01:50:03 Europe/Berlin] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/getAllRoomInfo.php on line 26
+[25-Apr-2015 01:50:03 Europe/Berlin] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/getAllRoomInfo.php on line 42
+[25-Apr-2015 01:50:09 Europe/Berlin] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/connection.php on line 7
+[25-Apr-2015 01:50:09 Europe/Berlin] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/getAllRoomInfo.php on line 26
+[25-Apr-2015 01:50:09 Europe/Berlin] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/getAllRoomInfo.php on line 42
+[02-May-2015 00:00:07 Europe/Berlin] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/searchRoom.php on line 86
+[02-May-2015 00:00:47 Europe/Berlin] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/getAllRoomInfo.php on line 26
+[02-May-2015 00:00:47 Europe/Berlin] PHP Notice:  Undefined index: cash_rate in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/getAllRoomInfo.php on line 43
+[02-May-2015 00:00:47 Europe/Berlin] PHP Notice:  Undefined index: point_rate in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/getAllRoomInfo.php on line 44
+[02-May-2015 00:00:47 Europe/Berlin] PHP Notice:  Undefined index: cash_rate in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/getAllRoomInfo.php on line 43
+[02-May-2015 00:00:47 Europe/Berlin] PHP Notice:  Undefined index: point_rate in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/getAllRoomInfo.php on line 44
+[02-May-2015 00:00:47 Europe/Berlin] PHP Notice:  Undefined index: cash_rate in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/getAllRoomInfo.php on line 43
+[02-May-2015 00:00:47 Europe/Berlin] PHP Notice:  Undefined index: point_rate in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/getAllRoomInfo.php on line 44
+[02-May-2015 00:28:30 Europe/Berlin] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/getAllRoomInfo.php on line 22
+[02-May-2015 00:30:18 Europe/Berlin] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/getAllRoomInfo.php on line 22
+[02-May-2015 00:30:22 Europe/Berlin] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/getAllRoomInfo.php on line 22
+[02-May-2015 00:30:53 Europe/Berlin] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/getAllRoomInfo.php on line 22
+[02-May-2015 00:33:45 Europe/Berlin] PHP Notice:  Undefined index: cash_rate in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/getAllRoomInfo.php on line 43
+[02-May-2015 00:33:45 Europe/Berlin] PHP Notice:  Undefined index: point_rate in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/getAllRoomInfo.php on line 44
+[02-May-2015 00:33:45 Europe/Berlin] PHP Notice:  Undefined index: cash_rate in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/getAllRoomInfo.php on line 43
+[02-May-2015 00:33:45 Europe/Berlin] PHP Notice:  Undefined index: point_rate in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/getAllRoomInfo.php on line 44
+[02-May-2015 00:33:45 Europe/Berlin] PHP Notice:  Undefined index: cash_rate in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/getAllRoomInfo.php on line 43
+[02-May-2015 00:33:45 Europe/Berlin] PHP Notice:  Undefined index: point_rate in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/getAllRoomInfo.php on line 44
+[02-May-2015 01:21:46 Europe/Berlin] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/getAllRoomInfo.php on line 47
+[04-May-2015 07:19:13 Europe/Berlin] PHP Parse error:  syntax error, unexpected '=' in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/occupationrate_json.php on line 28
+[09-May-2015 02:36:53 Europe/Berlin] PHP Notice:  Undefined index: pointroomnumber in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/bookroompoint.php on line 14
+[09-May-2015 02:36:53 Europe/Berlin] PHP Notice:  Undefined index: checkin in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/bookroompoint.php on line 14
+[09-May-2015 02:36:53 Europe/Berlin] PHP Notice:  Undefined index: checkout in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/bookroompoint.php on line 14
+[09-May-2015 02:36:53 Europe/Berlin] PHP Notice:  Undefined index: points in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/bookroompoint.php on line 15
+[09-May-2015 02:36:53 Europe/Berlin] PHP Notice:  Undefined index: promo in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/bookroompoint.php on line 15
+[09-May-2015 02:36:53 Europe/Berlin] PHP Notice:  Undefined index: bonus_point in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/bookroompoint.php on line 15
+[09-May-2015 04:54:02 Europe/Berlin] PHP Notice:  Undefined index: pointroomnumber in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/bookroompoint.php on line 14
+[09-May-2015 04:54:02 Europe/Berlin] PHP Notice:  Undefined index: checkin in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/bookroompoint.php on line 14
+[09-May-2015 04:54:02 Europe/Berlin] PHP Notice:  Undefined index: checkout in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/bookroompoint.php on line 14
+[09-May-2015 04:54:02 Europe/Berlin] PHP Notice:  Undefined index: points in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/bookroompoint.php on line 15
+[09-May-2015 04:54:02 Europe/Berlin] PHP Notice:  Undefined index: promo in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/bookroompoint.php on line 15
+[09-May-2015 04:54:02 Europe/Berlin] PHP Notice:  Undefined index: bonus_point in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/bookroompoint.php on line 15
+[09-May-2015 05:11:30 Europe/Berlin] PHP Notice:  Undefined variable: point in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/pointbookConfirmation.php on line 43
+[09-May-2015 05:11:30 Europe/Berlin] PHP Fatal error:  Call to undefined function msyql_query() in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/pointbookConfirmation.php on line 44
+[09-May-2015 05:33:23 Europe/Berlin] PHP Parse error:  syntax error, unexpected '}' in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/cancelReservation.php on line 20
+[09-May-2015 05:34:42 Europe/Berlin] PHP Notice:  Use of undefined constant getstay - assumed 'getstay' in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/cancelReservation.php on line 16
+[09-May-2015 05:34:42 Europe/Berlin] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/cancelReservation.php on line 17
+[09-May-2015 05:34:42 Europe/Berlin] PHP Notice:  Undefined variable: points in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/cancelReservation.php on line 25
+[09-May-2015 05:34:42 Europe/Berlin] PHP Notice:  Undefined variable: email in /Applications/XAMPP/xamppfiles/htdocs/me/hotel_management/web/cancelReservation.php on line 25
