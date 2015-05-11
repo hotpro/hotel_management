@@ -88,12 +88,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     else{
         echo "<table><tr><th>Room#</th><th>Room level</th><th>Total price</th>
-            <th>Point rate</th><th>Max_capacity</th><th></th>";
+            <th>Max_capacity</th><th></th>";
         while($room = mysql_fetch_array($result)){
             $roomnumber=$room["room_id"];
             $totalprice=($room["cash_rate"]*$nights)*(1-$discount);
             echo "<tr><td>".$room["room_id"]."</td><td>".$room["room_level"]."</td><td>"
-            .$totalprice."</td><td>".$room["point_rate"]."</td><td>".$room["max_capacity"].
+            .$totalprice."</td><td>".$room["max_capacity"].
             "</td><td><a href='bookRoom.php?room=$roomnumber&price=$totalprice'>Book</a></td></tr>";
         }
         echo "</table>";
